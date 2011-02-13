@@ -12,6 +12,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/Download/hibernate-distribution-3.6.0.Final/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Daniela/hibernate-distribution-3.6.1.Final/hibernate3.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

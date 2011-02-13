@@ -9,6 +9,9 @@ import javax.ejb.Stateless;
 /**
  * Session Bean implementation class EJB_RP
  */
+
+// RP = richiesta di parcheggio
+
 @Stateless(mappedName = "EJB_RP")
 @LocalBean
 public class EJB_RP implements EJB_RPRemote, EJB_RPLocal {

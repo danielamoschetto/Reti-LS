@@ -30,7 +30,7 @@ public class EJB_LS implements EJB_LSRemote, EJB_LSLocal {
 
 	public LocalServer GetLocalServer(GeoCoordinate x) {
 		session = sf.openSession();
-		session.beginTransaction();	
+		session.beginTransaction();		
 		SDC e = (SDC) session.get(SDC.class, (int)1);
 		return new LocalServer(e.getIp());
 	}

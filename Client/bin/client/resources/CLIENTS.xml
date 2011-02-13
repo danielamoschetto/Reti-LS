@@ -5,7 +5,7 @@
    <string>37.0.33.107</string> 
   </void> 
   <void property="numClient"> 
-   <int>2</int> 
+   <int>4</int> 
   </void> 
  </object> 
  <object class="client.ClientConfig">
@@ -22,6 +22,22 @@
   </void> 
   <void property="longitude"> 
    <double>40.0909</double> 
+  </void> 
+ </object> 
+ <object class="client.ClientConfig">
+  <void property="latitude"> 
+   <double>80.1111</double> 
+  </void> 
+  <void property="longitude"> 
+   <double>80.5555</double> 
+  </void> 
+ </object> 
+ <object class="client.ClientConfig">
+  <void property="latitude"> 
+   <double>100.1111</double> 
+  </void> 
+  <void property="longitude"> 
+   <double>100.5555</double> 
   </void> 
  </object> 
 </java> 

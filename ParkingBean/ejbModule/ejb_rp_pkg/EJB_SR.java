@@ -28,15 +28,23 @@ public class EJB_SR implements EJB_SRRemote, EJB_SRLocal {
     Session session;
 	SessionFactory sf = new Configuration().configure().buildSessionFactory();
 	
+	/*
+	 * ritorna la lista dei parking di quella città
+	 */
 	public Vector<Parking> getParking() {
 		session = sf.openSession();
 		session.beginTransaction();		
 		@SuppressWarnings("unchecked")
-		List<Parking> parklist = session.createSQLQuery("SELECT {Parking} FROM PARKING")
+		List<Parking> parklist = session.createSQLQuery("SELECT * FROM PARKING")
 			.addEntity("Parking",Parking.class).list();
 		return new Vector<Parking>(parklist);
 	}
 	
+	
+	/* client invoca reserve(Parking)
+	   setta l'id del parking in cui vogliamo prenotare
+	   ritorna il PNR come il max id della tabella Reservation
+	*/
 	public Reservation reserve(Parking p){
 		session = sf.openSession();
 		session.beginTransaction();

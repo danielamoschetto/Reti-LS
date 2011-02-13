@@ -5,18 +5,13 @@
 
 package client;
 
-import ejb_cl_pkg.EJB_CLRemote;
+import ejb_cl_pkg.EJB_ROUTERRemote;
 import ejb_cl_pkg.GeoCoordinate;
 import ejb_cl_pkg.LocalServer;
-import ejb_rp_pkg.EJB_RPRemote;
-
-import java.io.FileInputStream;
-import java.net.InetAddress;
 
 import java.util.Observable;
 import java.util.Properties;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
+import javax.naming.*;
 
 /**
  * 
@@ -45,32 +40,24 @@ public class ClientBL extends Observable implements Runnable {
 
 		props.loadFromXML(getClass().getResource("/client/resources/EJBconn.xml").openStream());
 		ctx = new InitialContext(props);
-		EJB_CLRemote bean;
+		EJB_ROUTERRemote bean;
 
-		bean = (EJB_CLRemote) ctx.lookup("EJB_CLName");
+		bean = (EJB_ROUTERRemote) ctx.lookup("EJB_CLName");
 		LS = bean.GetLocalServer(position);
-		
-		/*
-		Properties props2 = props;
-		props2.setProperty("org.omg.CORBA.ORBInitialHost", "daniela");
-		InitialContext ctx2 = new InitialContext(props2);
-		 EJB_RPRemote bean2 = (EJB_RPRemote) ctx.lookup("EJB_RP");
-		 bean2.getParking();
-		 */
 }
 
 	@Override
 	public void run() {
 		try {
 			GetLocalServer();
-			msg.setAll("Connected with server" + id, true, false);
+			msg.setAll("\nClientBL: \nConnected with server" + id, true, false);
 			setChanged();
 			notifyObservers(msg);
 			
 		} catch (Exception ex) {
 			System.out.println(ex.getMessage());
 			ex.printStackTrace();
-			msg.setAll("Fail Connection with server" + id, false, false);
+			msg.setAll("\nClientBL: \nFail Connection with server" + id, false, false);
 			setChanged();
 			notifyObservers(msg);
 		}

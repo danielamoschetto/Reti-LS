@@ -11,6 +11,9 @@
 
 package client;
 
+import java.beans.XMLDecoder;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 
 /**
@@ -19,13 +22,11 @@ import java.util.ArrayList;
  */
 public class GuiFrame extends javax.swing.JFrame {
 
-    /**
-	 * 
-	 */
+   
 	private static final long serialVersionUID = -5936213380408962486L;
-
-	/** Creates new form GuiFrame */
-    public GuiFrame() {
+	InputStream clientStream;
+	
+    public GuiFrame() throws Exception {
         initComponents();
     }
 
@@ -38,8 +39,11 @@ public class GuiFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+
         monitor1 = new client.monitor();
         monitor2 = new client.monitor();
+        monitor3 = new client.monitor();
+        monitor4 = new client.monitor();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,6 +56,10 @@ public class GuiFrame extends javax.swing.JFrame {
                 .addComponent(monitor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(monitor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(monitor3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(monitor4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -59,6 +67,8 @@ public class GuiFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                	.addComponent(monitor4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                	.addComponent(monitor3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(monitor2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(monitor1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -71,12 +81,16 @@ public class GuiFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public client.monitor monitor1;
     private client.monitor monitor2;
+    private client.monitor monitor3;
+    private client.monitor monitor4;
     // End of variables declaration//GEN-END:variables
 
     ArrayList<monitor> getMonitorArrayList() {
         ArrayList<monitor> tmp =  new ArrayList<monitor>();
         tmp.add(monitor1);
         tmp.add(monitor2);
+        tmp.add(monitor3);
+        tmp.add(monitor4);
         return tmp;
     }
 

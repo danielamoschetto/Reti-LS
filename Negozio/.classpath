@@ -5,5 +5,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JMS"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GFClient"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/RouterClient"/>
+	<classpathentry kind="lib" path="C:/Program Files/Sun/MessageQueue/mq/lib/imq.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Sun/MessageQueue/mq/lib/jms.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

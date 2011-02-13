@@ -5,7 +5,7 @@
 <hibernate-configuration>
     <session-factory name="dbFactory">
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://host285.hostmonster.com:3306/parking_sdc</property>
+        <property name="hibernate.connection.url">jdbc:mysql://mysql.primianotucci.com:3306/parking_sdc</property>
         <property name="hibernate.connection.username">parking</property>
         <property name="hibernate.connection.password">parkingpass</property>
         <property name="hibernate.default_schema">parking_sdc</property>

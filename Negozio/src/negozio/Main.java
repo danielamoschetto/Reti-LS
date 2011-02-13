@@ -1,8 +1,6 @@
 package negozio;
 
 import javax.naming.InitialContext;
-
-
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -19,7 +17,7 @@ public class Main {
 			props.loadFromXML(new FileInputStream("EJBconn.xml"));
 			ctx = new InitialContext(props);
 				
-			EJB_CLRemote bean = (EJB_CLRemote) ctx.lookup("EJB_CLName");			
+			EJB_ROUTERRemote bean = (EJB_ROUTERRemote) ctx.lookup("EJB_ROUTER");			
 		
 			// Roma Colosseo
 			LS = bean.GetLocalServer(new GeoCoordinate(41.8899993896484,12.4921998977661));
@@ -39,7 +37,7 @@ public class Main {
 		NegozioGui gui = new NegozioGui();
 		gui.setVisible(true);
 		
-		JMSproducer prod = new JMSproducer(new LocalServer("5.67.49.99"));
+		JMSproducer prod = new JMSproducer(new LocalServer("5.67.58.136"));
 		prod.addObserver(gui);
 		
 		new Thread(prod).start();
