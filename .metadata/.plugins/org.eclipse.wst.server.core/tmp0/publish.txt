@@ -1,0 +1,4 @@
+#GlassFish v3 Prelude
+#Fri Feb 11 16:10:03 CET 2011
+org.eclipse.jst.jee.server\:RouterEAR=C\:\\glassfish-3.0.1\\glassfish\\domains\\domain1\\eclipseApps\\RouterEAR
+org.eclipse.jst.jee.server\:ParkingEAR=C\:\\glassfish-3.0.1\\glassfish\\domains\\domain1\\eclipseApps\\ParkingEAR

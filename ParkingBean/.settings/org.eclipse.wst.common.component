@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ParkingBean">
+        <wb-resource deploy-path="/" source-path="/ejbModule"/>
+        <property name="java-output-path" value="/ParkingBean/build/classes"/>
+        <property name="ClientProject" value="ParkingBeanClient"/>
+        <property name="ClientJARURI" value="ParkingBeanClient.jar"/>
+    </wb-module>
+</project-modules>

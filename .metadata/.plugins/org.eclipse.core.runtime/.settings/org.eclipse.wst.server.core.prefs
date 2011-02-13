@@ -1,0 +1,4 @@
+#Thu Feb 10 17:39:04 CET 2011
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="GlassFish Server Open Source Edition 3 (Java EE 6)" location\="C\:/glassfish-3.0.1/glassfish" name\="GlassFish Server Open Source Edition 3 (Java EE 6)" runtime-type-id\="com.sun.enterprise.jst.server.runtime.sunappsrv92" server_definition_id\="com.sun.enterprise.jst.server.runtime.sunappsrv92" timestamp\="0" vm-install-id\="1297266776544" vm-install-type-id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n    <map key\="generic_server_instance_properties" sunappserver.rootdirectory\="C\:/glassfish-3.0.1/glassfish"/>\r\n  </runtime>\r\n</runtimes>\r\n
+eclipse.preferences.version=1

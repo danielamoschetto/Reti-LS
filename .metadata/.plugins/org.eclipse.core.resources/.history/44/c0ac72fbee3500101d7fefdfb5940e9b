@@ -1,0 +1,64 @@
+package client;
+
+import java.util.Observable;
+
+import javax.jms.*;
+
+import com.sun.messaging.ConnectionConfiguration;
+import com.sun.messaging.ConnectionFactory;
+
+import ejb_cl_pkg.LocalServer;
+
+public class JMSManager extends Observable implements Runnable{
+
+	private static ConnectionFactory connectionFactory;
+    private static Connection connection;
+    private static Topic topicADV;
+    private static boolean transacted = false;
+    public static MessageProducer producer;
+    public static Session session;
+
+    private long millsdelay;
+	
+	public long getMillsdelay() {
+		return millsdelay;
+	}
+
+	public void setMillsdelay(long millsdelay) {
+		this.millsdelay = millsdelay;
+	}
+
+	public JMSManager(LocalServer LS) throws JMSException {
+        String serverURL = "mq://"+LS.getName()+":7676";
+        connectionFactory = new  ConnectionFactory();		
+        connectionFactory.setProperty(ConnectionConfiguration.imqAddressList, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqConnectionURL, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultUsername, "admin");
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultPassword, "admin");
+        
+        connection = (Connection)connectionFactory.createConnection();
+        session = (Session) connection.createSession(transacted, Session.AUTO_ACKNOWLEDGE);
+        topicADV = session.createTopic("topicADV");
+    }
+
+	@Override
+	public void run() {
+		
+		try {
+			connection.start();
+		
+        setChanged();
+        notifyObservers(new String("connection Start"));
+        producer = session.createProducer(topicADV);
+        
+        	producer.send(session.createTextMessage("Ciao amore mio"));
+        	i++;
+			Thread.sleep(millsdelay);
+        
+		} catch (JMSException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+
+}
+

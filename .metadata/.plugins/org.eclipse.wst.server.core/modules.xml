@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:RouterEAR" serverId="GlassFish Server Open Source Edition 3 (Java EE 6) at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ParkingEAR" serverId="GlassFish Server Open Source Edition 3 (Java EE 6) at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Router" serverId="GlassFish Server Open Source Edition 3 (Java EE 6) at localhost"/>
+</modules>

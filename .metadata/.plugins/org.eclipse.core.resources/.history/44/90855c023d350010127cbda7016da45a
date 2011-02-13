@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory name="dbFactory">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://host285.hostmonster.com:3306/raffael2_parking</property>
+        <property name="hibernate.connection.username">parking</property>
+        <property name="hibernate.connection.password">parkingpass</property>
+        <property name="hibernate.default_schema">raffael2_parking</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="ejb_cl_pkg/SDC.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

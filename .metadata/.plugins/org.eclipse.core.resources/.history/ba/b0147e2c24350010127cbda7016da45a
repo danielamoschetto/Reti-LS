@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_23" class="java.beans.XMLDecoder"> 
+ <object class="client.SystemConfig">
+  <void property="ipRouter"> 
+   <string>37.0.33.107</string> 
+  </void> 
+  <void property="numClient"> 
+   <int>2</int> 
+  </void> 
+ </object> 
+ <object class="client.ClientConfig">
+  <void property="latitude"> 
+   <double>10.5656</double> 
+  </void> 
+  <void property="longitude"> 
+   <double>20.5656</double> 
+  </void> 
+ </object> 
+ <object class="client.ClientConfig">
+  <void property="latitude"> 
+   <double>30.0909</double> 
+  </void> 
+  <void property="longitude"> 
+   <double>40.0909</double> 
+  </void> 
+ </object> 
+</java> 

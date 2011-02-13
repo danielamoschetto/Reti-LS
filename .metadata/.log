@@ -1,0 +1,957 @@
+!SESSION 2011-02-09 16:51:33.612 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -data C:\Users\Fabio\Documents\workspace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.publisher 4 0 2011-02-09 16:58:48.574
+!MESSAGE Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.
+
+!ENTRY org.eclipse.equinox.p2.publisher 4 0 2011-02-09 16:58:48.574
+!MESSAGE Invalid site reference %updateSiteURL in feature com.pramati.eclipse.feature.
+!SESSION 2011-02-10 14:55:16.979 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 15:02:40.822
+!MESSAGE GlassFish: derbyJar =C:\glassfish-3.0.1\glassfish
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 15:02:40.903
+!MESSAGE GlassFish: derbyJar =C:\glassfish-3.0.1\glassfish
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:51.846
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 1 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.319
+!MESSAGE GlassFish: deploy is failing=
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.321
+!MESSAGE Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.324
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.327
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.334
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 1 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.342
+!MESSAGE cannot Deploy RouterEAR
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.342
+!MESSAGE Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.485
+!MESSAGE GlassFish: deploy is failing=
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.485
+!MESSAGE Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.488
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:41:52.491
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.496
+!MESSAGE cannot Deploy RouterEAR
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:41:52.496
+!MESSAGE Deployment Error for module: RouterEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [Router.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:26.887
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 1 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.471
+!MESSAGE GlassFish: publishModule kind= 3  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.474
+!MESSAGE GlassFish: publishModule kind= 3  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.476
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 1 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.696
+!MESSAGE GlassFish: deploy is failing=
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: ParkingEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [ParkingBean.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:43:27.697
+!MESSAGE Deployment Error for module: ParkingEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [ParkingBean.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.699
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.701
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=1 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.707
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 1 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.710
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.714
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:27.716
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 1 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:43:27.720
+!MESSAGE cannot Deploy ParkingEAR
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: ParkingEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [ParkingBean.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-10 18:43:27.720
+!MESSAGE Deployment Error for module: ParkingEAR: Exception while deploying the app : java.lang.IllegalArgumentException: Invalid ejb jar [ParkingBean.jar]: it contains zero ejb. %%%EOL%%%Note: %%%EOL%%%1. A valid ejb jar requires at least one session, entity (1.x/2.x style), or message-driven bean. %%%EOL%%%2. EJB3+ entity beans (@Entity) are POJOs and please package them as library jar. %%%EOL%%%3. If the jar file contains valid EJBs which are annotated with EJB component level annotations (@Stateless, @Stateful, @MessageDriven, @Singleton), please check server.log to see whether the annotations were processed properly.%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:28.419
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:43:28.421
+!MESSAGE GlassFish: publishModule kind= 1  deltaKind=0 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:59:04.349
+!MESSAGE GlassFish: >>> C:\Program Files (x86)\Java\jdk1.6.0_23/bin/java
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:59:07.386
+!MESSAGE GlassFish: >>> Waiting for the domain to stop ...
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-10 18:59:07.392
+!MESSAGE GlassFish: >>> Command stop-domain executed successfully.
+!SESSION 2011-02-11 15:05:43.032 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:09:59.416
+!MESSAGE GlassFish: IsReady is failing=
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServer.getV3ServerStatus(SunAppServer.java:592)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerLaunch.launch(SunAppServerLaunch.java:390)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:853)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:702)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:695)
+	at org.eclipse.wst.server.core.internal.Server.startImpl2(Server.java:3209)
+	at org.eclipse.wst.server.core.internal.Server.startImpl(Server.java:3159)
+	at org.eclipse.wst.server.core.internal.Server$StartJob.run(Server.java:359)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:01.347
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 1 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:01.695
+!MESSAGE GlassFish: deploy is failing=
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Application name RouterEAR is already in use. Please pick a different name.%%%EOL%%%java.lang.NullPointerException%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-11 16:10:01.696
+!MESSAGE Deployment Error for module: RouterEAR: Application name RouterEAR is already in use. Please pick a different name.%%%EOL%%%java.lang.NullPointerException%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:01.699
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:01.710
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 2 RouterEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:01.714
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 1 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:03.608
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 16:10:03.608
+!MESSAGE GlassFish: publishModule kind= 2  deltaKind=0 2 ParkingEAR
+
+!ENTRY oracle.eclipse.tools.glassfish 4 0 2011-02-11 16:10:03.623
+!MESSAGE cannot Deploy RouterEAR
+!STACK 1
+org.eclipse.core.runtime.CoreException: Deployment Error for module: RouterEAR: Application name RouterEAR is already in use. Please pick a different name.%%%EOL%%%java.lang.NullPointerException%%%EOL%%%
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishDeployedDirectory(SunAppServerBehaviour.java:762)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModuleForGlassFishV3(SunAppServerBehaviour.java:598)
+	at com.sun.enterprise.jst.server.sunappsrv.SunAppServerBehaviour.publishModule(SunAppServerBehaviour.java:288)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1025)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1115)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:948)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:775)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2889)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:337)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 oracle.eclipse.tools.glassfish 4 0 2011-02-11 16:10:03.623
+!MESSAGE Deployment Error for module: RouterEAR: Application name RouterEAR is already in use. Please pick a different name.%%%EOL%%%java.lang.NullPointerException%%%EOL%%%
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 17:59:40.752
+!MESSAGE GlassFish: >>> C:\Program Files (x86)\Java\jdk1.6.0_23/bin/java
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 17:59:49.971
+!MESSAGE GlassFish: >>> Waiting for the domain to stop .........
+
+!ENTRY oracle.eclipse.tools.glassfish 4 1 2011-02-11 17:59:49.981
+!MESSAGE GlassFish: >>> Command stop-domain executed successfully.
+!SESSION 2011-02-12 09:59:08.087 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.wst.server.core 4 0 2011-02-12 09:59:32.126
+!MESSAGE Missing or failed server extension: RuntimeClasspathProviderWrapper[com.sun.enterprise.jst.server.runtimeTarget]. Enable tracing for more information
+!SESSION 2011-02-12 11:32:35.230 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.security 1 0 2011-02-12 11:45:40.449
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.egit.ui 4 0 2011-02-12 11:58:43.390
+!MESSAGE Clipboard content is not a directory path
+
+!ENTRY org.eclipse.egit.ui 4 0 2011-02-12 11:59:03.332
+!MESSAGE Clipboard content is not a directory path
+
+!ENTRY org.eclipse.egit.ui 4 0 2011-02-12 12:02:39.571
+!MESSAGE Path C:\Users\Fabio\Documents\workspace\Router\.git\refs does not appear to be a Git Repository location
+
+!ENTRY org.eclipse.egit.ui 4 0 2011-02-12 12:03:22.159
+!MESSAGE Repository at location C:\Users\Fabio\Documents\workspace\Router\.git is already in the list
+
+!ENTRY org.eclipse.egit.ui 4 0 2011-02-12 12:03:40.915
+!MESSAGE Clipboard content is not a directory path
+
+!ENTRY org.eclipse.jface 4 2 2011-02-12 12:35:00.844
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.IllegalStateException: Source/Destination must match.
+	at org.eclipse.jgit.transport.RefSpec.setSourceDestination(RefSpec.java:280)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel.setRefSpecDestination(RefSpecPanel.java:171)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel.access$33(RefSpecPanel.java:164)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel$23.setValue(RefSpecPanel.java:1167)
+	at org.eclipse.jface.viewers.EditingSupport.saveCellEditorValue(EditingSupport.java:113)
+	at org.eclipse.jface.viewers.ColumnViewerEditor.saveEditorValue(ColumnViewerEditor.java:455)
+	at org.eclipse.jface.viewers.ColumnViewerEditor.applyEditorValue(ColumnViewerEditor.java:311)
+	at org.eclipse.jface.viewers.ColumnViewerEditor$2.applyEditorValue(ColumnViewerEditor.java:153)
+	at org.eclipse.jface.viewers.CellEditor$1.run(CellEditor.java:333)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.CellEditor.fireApplyEditorValue(CellEditor.java:331)
+	at org.eclipse.jface.viewers.TextCellEditor.handleDefaultSelection(TextCellEditor.java:293)
+	at org.eclipse.jface.viewers.TextCellEditor$1.widgetDefaultSelected(TextCellEditor.java:148)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.repository.tree.command.FetchCommand.execute(FetchCommand.java:34)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.menus.CommandContributionItem.handleWidgetSelection(CommandContributionItem.java:820)
+	at org.eclipse.ui.menus.CommandContributionItem.access$19(CommandContributionItem.java:806)
+	at org.eclipse.ui.menus.CommandContributionItem$5.handleEvent(CommandContributionItem.java:796)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.jface 4 2 2011-02-12 12:35:00.891
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
+!STACK 0
+java.lang.IllegalStateException: Source/Destination must match.
+	at org.eclipse.jgit.transport.RefSpec.setSourceDestination(RefSpec.java:280)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel.setRefSpecDestination(RefSpecPanel.java:171)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel.access$33(RefSpecPanel.java:164)
+	at org.eclipse.egit.ui.internal.components.RefSpecPanel$23.setValue(RefSpecPanel.java:1167)
+	at org.eclipse.jface.viewers.EditingSupport.saveCellEditorValue(EditingSupport.java:113)
+	at org.eclipse.jface.viewers.ColumnViewerEditor.saveEditorValue(ColumnViewerEditor.java:455)
+	at org.eclipse.jface.viewers.ColumnViewerEditor.applyEditorValue(ColumnViewerEditor.java:311)
+	at org.eclipse.jface.viewers.ColumnViewerEditor$2.applyEditorValue(ColumnViewerEditor.java:153)
+	at org.eclipse.jface.viewers.CellEditor$1.run(CellEditor.java:333)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.CellEditor.fireApplyEditorValue(CellEditor.java:331)
+	at org.eclipse.jface.viewers.CellEditor.focusLost(CellEditor.java:716)
+	at org.eclipse.jface.viewers.TextCellEditor$5.focusLost(TextCellEditor.java:186)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:143)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2618)
+	at org.eclipse.swt.widgets.Widget.wmKillFocus(Widget.java:1920)
+	at org.eclipse.swt.widgets.Control.WM_KILLFOCUS(Control.java:4504)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4193)
+	at org.eclipse.swt.widgets.Text.windowProc(Text.java:2170)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4886)
+	at org.eclipse.swt.internal.win32.OS.BringWindowToTop(Native Method)
+	at org.eclipse.swt.widgets.Decorations.bringToTop(Decorations.java:230)
+	at org.eclipse.swt.widgets.Shell.open(Shell.java:1194)
+	at org.eclipse.jface.window.Window.open(Window.java:797)
+	at org.eclipse.ui.internal.statushandlers.InternalDialog.open(InternalDialog.java:327)
+	at org.eclipse.ui.internal.statushandlers.WorkbenchStatusDialogManagerImpl.doAddStatusAdapter(WorkbenchStatusDialogManagerImpl.java:270)
+	at org.eclipse.ui.internal.statushandlers.WorkbenchStatusDialogManagerImpl.addStatusAdapter(WorkbenchStatusDialogManagerImpl.java:197)
+	at org.eclipse.ui.statushandlers.WorkbenchStatusDialogManager.addStatusAdapter(WorkbenchStatusDialogManager.java:156)
+	at org.eclipse.ui.statushandlers.WorkbenchErrorHandler.showStatusAdapter(WorkbenchErrorHandler.java:101)
+	at org.eclipse.ui.statushandlers.WorkbenchErrorHandler.handle(WorkbenchErrorHandler.java:57)
+	at org.eclipse.ui.internal.ide.IDEWorkbenchErrorHandler.handle(IDEWorkbenchErrorHandler.java:108)
+	at org.eclipse.ui.internal.WorkbenchErrorHandlerProxy.handle(WorkbenchErrorHandlerProxy.java:36)
+	at org.eclipse.ui.statushandlers.StatusManager.handle(StatusManager.java:189)
+	at org.eclipse.ui.internal.JFaceUtil$3.show(JFaceUtil.java:70)
+	at org.eclipse.jface.util.SafeRunnable.handleException(SafeRunnable.java:67)
+	at org.eclipse.core.runtime.SafeRunner.handleException(SafeRunner.java:75)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:44)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.CellEditor.fireApplyEditorValue(CellEditor.java:331)
+	at org.eclipse.jface.viewers.TextCellEditor.handleDefaultSelection(TextCellEditor.java:293)
+	at org.eclipse.jface.viewers.TextCellEditor$1.widgetDefaultSelected(TextCellEditor.java:148)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:119)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.repository.tree.command.FetchCommand.execute(FetchCommand.java:34)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:293)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.menus.CommandContributionItem.handleWidgetSelection(CommandContributionItem.java:820)
+	at org.eclipse.ui.menus.CommandContributionItem.access$19(CommandContributionItem.java:806)
+	at org.eclipse.ui.menus.CommandContributionItem$5.handleEvent(CommandContributionItem.java:796)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.277
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.277
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.287
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.287
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.297
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.297
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.307
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.307
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.307
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.317
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.317
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.347
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.347
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.357
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.357
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.367
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.367
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.367
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.377
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.377
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.387
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.397
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.397
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.397
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.407
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 12:55:04.417
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:30.768
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:33.738
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:41.568
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:42.368
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:43.748
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:47.858
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+
+!ENTRY org.eclipse.ui 4 0 2011-02-12 12:58:48.608
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.eclipse.egit.ui.internal.synchronize.RemoteSelectionCombo.getValue(RemoteSelectionCombo.java:91)
+	at org.eclipse.egit.ui.internal.synchronize.SelectSynchronizeResourceDialog.buttonPressed(SelectSynchronizeResourceDialog.java:173)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:624)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.egit.ui.internal.actions.SynchronizeWithActionHandler.execute(SynchronizeWithActionHandler.java:58)
+	at org.eclipse.egit.ui.internal.actions.RepositoryAction.run(RepositoryAction.java:85)
+	at org.eclipse.ui.internal.PluginAction.runWithEvent(PluginAction.java:251)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+!SESSION 2011-02-12 17:52:40.085 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.174
+!MESSAGE NLS unused message: add_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.224
+!MESSAGE NLS unused message: bp_conditional in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.226
+!MESSAGE NLS unused message: bp_conditonal in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.227
+!MESSAGE NLS unused message: bp_entry_and_exit in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.229
+!MESSAGE NLS unused message: bp_entry_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.232
+!MESSAGE NLS unused message: bp_exit_only in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.234
+!MESSAGE NLS unused message: bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.236
+!MESSAGE NLS unused message: bp_line_number in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.239
+!MESSAGE NLS unused message: bp_suspend_vm in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.240
+!MESSAGE NLS unused message: breakpoint_configuration in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.245
+!MESSAGE NLS unused message: connect in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.247
+!MESSAGE NLS unused message: connector in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.251
+!MESSAGE NLS unused message: connector_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.258
+!MESSAGE NLS unused message: creating_script_load_bp in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.261
+!MESSAGE NLS unused message: enable_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.264
+!MESSAGE NLS unused message: enter_new_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.267
+!MESSAGE NLS unused message: exception_occurred_setting_bp_properties in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.270
+!MESSAGE NLS unused message: hit_count_must_be_positive in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.272
+!MESSAGE NLS unused message: no_description_provided in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.273
+!MESSAGE NLS unused message: scripts in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.275
+!MESSAGE NLS unused message: select_javascript_file in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.277
+!MESSAGE NLS unused message: set_bp_hit_count in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.278
+!MESSAGE NLS unused message: suspend_target in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.280
+!MESSAGE NLS unused message: suspend_thread in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.282
+!MESSAGE NLS unused message: the_argument_0_is_not_valid in: org.eclipse.wst.jsdt.debug.internal.ui.messages
+
+!ENTRY org.eclipse.osgi 2 1 2011-02-12 17:52:54.284
+!MESSAGE NLS unused message: osgi.nls.warnings in: org.eclipse.wst.jsdt.debug.internal.ui.messages

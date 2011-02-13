@@ -1,0 +1,76 @@
+package negozio;
+
+import java.util.Observable;
+
+import javax.jms.*;
+
+import com.sun.messaging.ConnectionConfiguration;
+import com.sun.messaging.ConnectionFactory;
+
+import ejb_cl_pkg.LocalServer;
+
+public class JMSproducer extends Observable implements Runnable{
+
+	private static ConnectionFactory connectionFactory;
+    private static Connection connection;
+    private static Topic topicADV;
+    private static boolean transacted = false;
+    public static MessageProducer producer;
+    public static Session session;
+
+    private long millsdelay;
+	private int count;
+	private String textMsg;
+	
+	public long getMillsdelay() {
+		return millsdelay;
+	}
+
+	public void setMillsdelay(long millsdelay) {
+		this.millsdelay = millsdelay;
+	}
+
+	public JMSproducer(LocalServer LS) throws JMSException {
+		
+		count = 10;
+		millsdelay = 1000;
+		textMsg = "ciao";
+		
+		System.out.print("creato");
+		
+        String serverURL = "mq://"+LS.getName()+":7676";
+        connectionFactory = new  ConnectionFactory();		
+        connectionFactory.setProperty(ConnectionConfiguration.imqAddressList, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqConnectionURL, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultUsername, "admin");
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultPassword, "admin");
+        
+        connection = (Connection)connectionFactory.createConnection();
+        session = (Session) connection.createSession(transacted, Session.AUTO_ACKNOWLEDGE);
+        topicADV = session.createTopic("topicADV");
+        producer = session.createProducer(topicADV);
+    }
+
+	@Override
+	public void run() {		
+		try {
+			System.out.print("partito");
+			connection.start();
+	        setChanged();
+	        notifyObservers(new String("connection Start"));
+	        for(int i = 0; i < count; i++){	        
+	        	producer.send(session.createTextMessage(textMsg));
+	        	Thread.sleep(millsdelay);
+	        }	        
+		} catch (JMSException e) {
+			setChanged();
+			notifyObservers("JMS Error: " + e.getMessage());
+		}
+		catch (InterruptedException ie) {
+			setChanged();
+			notifyObservers("Interupted Error: " + ie.getMessage());
+		}
+	}
+}
+
+

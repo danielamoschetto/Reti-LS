@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>commento file</comment>
+<entry key="org.omg.CORBA.ORBInitialPort">3700</entry>
+<entry key="java.naming.factory.initial">com.sun.enterprise.naming.SerialInitContextFactory</entry>
+<entry key="org.omg.CORBA.ORBInitialHost">5.67.49.99</entry>
+</properties>

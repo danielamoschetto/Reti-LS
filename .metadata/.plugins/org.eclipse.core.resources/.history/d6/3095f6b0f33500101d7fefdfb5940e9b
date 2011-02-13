@@ -1,0 +1,57 @@
+package consumer;
+
+import javax.jms.Connection;
+import javax.jms.JMSException;
+import javax.jms.MessageConsumer;
+import javax.jms.MessageProducer;
+import javax.jms.Session;
+import javax.jms.Topic;
+
+import com.sun.messaging.ConnectionConfiguration;
+import com.sun.messaging.ConnectionFactory;
+
+import ejb_cl_pkg.LocalServer;
+
+public class JMSManager {
+
+    private static ConnectionFactory connectionFactory;
+    private static Connection connection;
+    private static Topic topicADV;
+    private static Topic topicSP;
+    private static boolean transacted = false;
+    private static ADVConsumer AdvCons;
+    private static SPConsumer SpCons;
+    public static MessageProducer producer;
+    public static Session session;
+
+	
+	public JMSManager(LocalServer LS) throws JMSException {
+		// TODO Auto-generated method stub
+	    
+        String serverURL = "mq://"+LS.getName()+":7676";
+        
+        connectionFactory = new  ConnectionFactory();		
+        connectionFactory.setProperty(ConnectionConfiguration.imqAddressList, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqConnectionURL, serverURL);
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultUsername, "admin");
+        connectionFactory.setProperty(ConnectionConfiguration.imqDefaultPassword, "admin");
+        connection = (Connection)connectionFactory.createConnection();
+
+        session = (Session) connection.createSession(transacted, Session.AUTO_ACKNOWLEDGE);
+        
+        topicADV = session.createTopic("topicADV");
+        topicSP = session.createTopic("topicSP");
+        connection.start();
+
+        MessageConsumer receiverADV = session.createConsumer(topicADV);
+        AdvCons = new ADVConsumer();
+        connection.setExceptionListener(AdvCons);
+        receiverADV.setMessageListener(AdvCons);
+        
+        MessageConsumer receiverSP = session.createConsumer(topicSP);
+        SpCons = new SPConsumer();
+        connection.setExceptionListener(SpCons);
+        receiverSP.setMessageListener(SpCons);
+    }
+
+}
